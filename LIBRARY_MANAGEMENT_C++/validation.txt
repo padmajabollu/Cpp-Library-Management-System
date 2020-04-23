@@ -1,0 +1,56 @@
+						wBook.open("Librarian.txt");
+                            
+                        for(ilibrarian=Librarian.begin();ilibrarian !=Librarian.end();ilibrarian++)
+                        {
+                            for(int i=0;i<(ilibrarian->second).size();i++)
+                            {
+                                
+                                cout<<ilibrarian->second[i]<<" ";
+
+                            }
+                            stringstream ss;
+                            ss<<ilibrarian->second[0]<<" "<<ilibrarian->second[1]<<" "<<ilibrarian->second[2]<<"\n";
+                            string output=ss.str();
+                            wLibrarian<<output;
+                            
+                            cout<<endl;
+
+                        }
+                        wLibrarian.close();
+						
+						===================
+						ofstream wStudent;
+                            wStudent.open("Student.txt");
+
+                            for(istudent=Student.begin();istudent !=Student.end();istudent++)                                   
+                            {
+                                for(int i=0;i<(istudent->second).size();i++)
+                                {
+                                    cout<<istudent->second[i]<<" ";
+
+                                }
+                                stringstream ss;
+                                ss<<istudent->second[0]<<" "<<istudent->second[1]<<" "<<istudent->second[2]<<" "<<istudent->second[3]<<"\n";
+                                string output=ss.str();
+                                wStudent<<output;
+                                cout<<endl;
+                            }
+                            wStudent.close();
+                            
+							ofstream wStudentBook;
+                                                    wStudentBook.open("StudentBook.txt");
+                                                    for(istudentbook=StudentBook.begin();istudentbook !=StudentBook.end();istudentbook++)                                  
+                                                    {
+                                                        for(int i=0;i<(istudentbook->second).size();i++)
+                                                        {
+                                                            cout<<istudentbook->second[i]<<" ";
+
+                                                        }
+                                                        cout<<endl;
+                                                        stringstream ss;
+                                                        ss<<istudentbook->second[0]<<" "<<istudentbook->second[1]<<" "<<istudentbook->second[2]<<" "<<istudentbook->second[3]<<" "<<istudentbook->second[4]<<istudentbook->second[5]<<" "<<istudentbook->second[6]<<" "<<istudentbook->second[7]<<"\n";
+                                                        string output=ss.str();
+                                                        wStudentBook<<output;
+
+                                                    }
+                                                    wStudentBook.close();
